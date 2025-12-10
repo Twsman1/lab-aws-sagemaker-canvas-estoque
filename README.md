@@ -24,22 +24,17 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 
 ### 2. Construir/Treinar
 
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+- O modelo foi construido com base em previsão númerica ao inves de previsão temporal levando em consideração o numero de entradas e saidas de cada peça.
+- Usando com base o tipo de modelagem Quick Build que tende a ser mais rápido porem pode pecar um pouco na acuracia do resultado final.
+- Após concluido o modelo demonstrou uma analise não muito precisa por se tratarem de dados aleatorios.
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+-  O modelo obteve um RMSE de 22 e um MSE de 499. Indicando um mal refinamento.
+-  Quando menor o RMSE mais preciso seria o resultado em variação as quantidade de estoque sendo assim ele indiciaria uma media de 22 unidades por peça no estoque.
+-  O modelo indicou que as datas possuiam maior relevancia no refinamento em seguida o item em especifico.
 
 ### 4. Prever
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+- Foram realizadas algumas prediçoes para teste que estarão na pasta imagens deste repositorio
 
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
